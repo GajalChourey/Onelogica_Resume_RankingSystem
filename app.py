@@ -134,8 +134,10 @@ def filter_resumes_by_percentage(results_df, lower_percent, upper_percent):
     return filtered_json
 
 # Load and preprocess files
-resume_folder = r"D:\Parser\resume_matcher_lambda\Data\Java Developer Resumes"
+resume_folder = r"D:\Parser\resume_matcher_lambda\Data\Java Developer Resumes"    
+# Write the path of your Resume folder
 job_description_folder = r"D:\Parser\resume_matcher_lambda\Data\job_description"
+# Write the path of your JD folder
 resumes = load_files(resume_folder)
 job_descriptions = load_files(job_description_folder)
 
